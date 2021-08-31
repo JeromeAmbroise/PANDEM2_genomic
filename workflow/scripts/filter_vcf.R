@@ -1,0 +1,13 @@
+library(VariantAnnotation)
+
+index <- indexVcf(paste(snakemake@input[[1]]))
+filt <- FilterRules(list(FILTGENOT1 = function(x) ( (geno(x)$GT == 1) & (rowRanges(x)$QUAL>20 ) )))
+filterVcf(file = index$path,filters = filt,destination = paste(snakemake@output[[1]]))
+myvcfgz <-  bgzip(paste(snakemake@output[[1]]),overwrite=T)
+index <- indexVcf(myvcfgz)
+filt <- FilterRules(list(FILTGENOT1 = function(x) ( as.numeric(geno(x)$AO)/as.numeric(geno(x)$DP)>0.5 ) ))
+filterVcf(file = index$path,filters = filt,destination = paste(snakemake@output[[2]]))
+unlink(index$path)
+unlink(index$index)
+myvcfgz <-  bgzip(paste(snakemake@output[[2]]),overwrite=T)
+index <- indexVcf(myvcfgz)

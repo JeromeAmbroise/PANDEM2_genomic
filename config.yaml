@@ -1,0 +1,15 @@
+#Important note : All paths definded in this configuration file must be either absolute or relative to the location of the Snakefile
+
+## Path to existing reference file
+reference_genome: input/nextclade_data/reference.fasta
+dir_next_clade: input/nextclade_data
+
+## Path to existing metadata
+metadata : input/metadata.csv
+## Path to fastq files
+FASTQdir : input/fastq
+## Path to output directory
+outputdir : result
+
+
+

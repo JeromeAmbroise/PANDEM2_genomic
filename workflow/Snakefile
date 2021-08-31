@@ -1,0 +1,23 @@
+import os
+configfile: "config.yaml"
+
+outputdir = config["outputdir"]
+FASTQdir = config["FASTQdir"]
+
+import pandas as pd
+metadata = pd.read_csv(config["metadata"], sep=',')
+
+rule all:
+   input:
+      expand(os.path.join(outputdir, "nextclade","{sample}.tsv"),sample=metadata.samplename.tolist()),
+      os.path.join(outputdir, "merged_result.csv"),
+
+include: "rules/Mapping1_minimap2.smk"
+include: "rules/variant_calling_freebayes.smk"
+include: "rules/filter_VCF.smk"
+include: "rules/compute_consensus_sequences.smk"
+include: "rules/Mapping2_minimap2.smk"
+include: "rules/mark_lowcoverage_in_consensus.smk"
+include: "rules/annotate_nextclade.smk"
+include: "rules/merge_result.smk"
+include: "rules/merge_vcf.smk"

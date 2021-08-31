@@ -1,0 +1,23 @@
+name: PANDEM2_genomic
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base=4.1.1
+  - freebayes=1.3.2
+  - minimap2=2.17
+  - snakemake=6.6.1
+  - samtools=1.12
+  - bioconductor-summarizedexperiment=1.22.0
+  - bioconductor-variantexperiment=1.6.0
+  - bioconductor-variantannotation=1.38.0
+  - bioconductor-annotationdbi=1.54.0
+  - bioconductor-rtracklayer>=1.52.0
+  - bioconductor-genomicfeatures>=1.44.0
+  - bioconductor-biomart=2.48.0
+  - bioconductor-seqarray=1.32.0
+  - bcftools=1.12
+  - htslib=1.12
+  - freetype=2.10.4
+  - ncurses=6.2
+  - nextclade=1.2.3

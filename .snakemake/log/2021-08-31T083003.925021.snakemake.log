@@ -1,0 +1,1779 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                              count    min threads    max threads
+-----------------------------  -------  -------------  -------------
+Mapping1_minimap2                   18              1              1
+Mapping2_minimap2                   18              1              1
+all                                  1              1              1
+annotate_nextclade                  18              1              1
+compute_consensus_sequence          18              1              1
+filter_vcf                          18              1              1
+mark_lowcoverage_in_consensus       18              1              1
+merge_results                        1              1              1
+variant_calling_freebayes           18              1              1
+total                              128              1              1
+
+Select jobs to execute...
+
+[Tue Aug 31 08:30:04 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12886393_1.fastq
+    output: result/mapping1/SRR12886393_1.sam, result/mapping1/SRR12886393_1.bam, result/mapping1/SRR12886393_1.sorted.bam, result/mapping1/SRR12886393_1.sorted.bam.bai
+    jobid: 84
+    wildcards: sample=SRR12886393_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:04 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12881618_1.fastq
+    output: result/mapping1/SRR12881618_1.sam, result/mapping1/SRR12881618_1.bam, result/mapping1/SRR12881618_1.sorted.bam, result/mapping1/SRR12881618_1.sorted.bam.bai
+    jobid: 42
+    wildcards: sample=SRR12881618_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:04 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12886394_1.fastq
+    output: result/mapping1/SRR12886394_1.sam, result/mapping1/SRR12886394_1.bam, result/mapping1/SRR12886394_1.sorted.bam, result/mapping1/SRR12886394_1.sorted.bam.bai
+    jobid: 91
+    wildcards: sample=SRR12886394_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:04 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12881617_1.fastq
+    output: result/mapping1/SRR12881617_1.sam, result/mapping1/SRR12881617_1.bam, result/mapping1/SRR12881617_1.sorted.bam, result/mapping1/SRR12881617_1.sorted.bam.bai
+    jobid: 35
+    wildcards: sample=SRR12881617_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:04 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12881616_1.fastq
+    output: result/mapping1/SRR12881616_1.sam, result/mapping1/SRR12881616_1.bam, result/mapping1/SRR12881616_1.sorted.bam, result/mapping1/SRR12881616_1.sorted.bam.bai
+    jobid: 28
+    wildcards: sample=SRR12881616_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:04 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12881622_1.fastq
+    output: result/mapping1/SRR12881622_1.sam, result/mapping1/SRR12881622_1.bam, result/mapping1/SRR12881622_1.sorted.bam, result/mapping1/SRR12881622_1.sorted.bam.bai
+    jobid: 70
+    wildcards: sample=SRR12881622_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:04 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12881619_1.fastq
+    output: result/mapping1/SRR12881619_1.sam, result/mapping1/SRR12881619_1.bam, result/mapping1/SRR12881619_1.sorted.bam, result/mapping1/SRR12881619_1.sorted.bam.bai
+    jobid: 49
+    wildcards: sample=SRR12881619_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:04 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12886395_1.fastq
+    output: result/mapping1/SRR12886395_1.sam, result/mapping1/SRR12886395_1.bam, result/mapping1/SRR12886395_1.sorted.bam, result/mapping1/SRR12886395_1.sorted.bam.bai
+    jobid: 98
+    wildcards: sample=SRR12886395_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:04 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12886396_1.fastq
+    output: result/mapping1/SRR12886396_1.sam, result/mapping1/SRR12886396_1.bam, result/mapping1/SRR12886396_1.sorted.bam, result/mapping1/SRR12886396_1.sorted.bam.bai
+    jobid: 105
+    wildcards: sample=SRR12886396_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:04 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12881614_1.fastq
+    output: result/mapping1/SRR12881614_1.sam, result/mapping1/SRR12881614_1.bam, result/mapping1/SRR12881614_1.sorted.bam, result/mapping1/SRR12881614_1.sorted.bam.bai
+    jobid: 14
+    wildcards: sample=SRR12881614_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping1/SRR12886393_1.sam.
+Removing temporary output file result/mapping1/SRR12886393_1.bam.
+[Tue Aug 31 08:30:04 2021]
+Finished job 84.
+1 of 128 steps (0.78%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:05 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12881621_1.fastq
+    output: result/mapping1/SRR12881621_1.sam, result/mapping1/SRR12881621_1.bam, result/mapping1/SRR12881621_1.sorted.bam, result/mapping1/SRR12881621_1.sorted.bam.bai
+    jobid: 63
+    wildcards: sample=SRR12881621_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping1/SRR12881618_1.sam.
+Removing temporary output file result/mapping1/SRR12881618_1.bam.
+[Tue Aug 31 08:30:05 2021]
+Finished job 42.
+2 of 128 steps (2%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:05 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12881615_1.fastq
+    output: result/mapping1/SRR12881615_1.sam, result/mapping1/SRR12881615_1.bam, result/mapping1/SRR12881615_1.sorted.bam, result/mapping1/SRR12881615_1.sorted.bam.bai
+    jobid: 21
+    wildcards: sample=SRR12881615_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping1/SRR12881617_1.sam.
+Removing temporary output file result/mapping1/SRR12881617_1.bam.
+[Tue Aug 31 08:30:05 2021]
+Finished job 35.
+3 of 128 steps (2%) done
+Removing temporary output file result/mapping1/SRR12881616_1.sam.
+Removing temporary output file result/mapping1/SRR12881616_1.bam.
+[Tue Aug 31 08:30:05 2021]
+Finished job 28.
+4 of 128 steps (3%) done
+Removing temporary output file result/mapping1/SRR12881614_1.sam.
+Removing temporary output file result/mapping1/SRR12881614_1.bam.
+[Tue Aug 31 08:30:05 2021]
+Finished job 14.
+5 of 128 steps (4%) done
+Removing temporary output file result/mapping1/SRR12881619_1.sam.
+Removing temporary output file result/mapping1/SRR12881619_1.bam.
+[Tue Aug 31 08:30:05 2021]
+Finished job 49.
+6 of 128 steps (5%) done
+Removing temporary output file result/mapping1/SRR12886394_1.sam.
+Removing temporary output file result/mapping1/SRR12886394_1.bam.
+[Tue Aug 31 08:30:05 2021]
+Finished job 91.
+7 of 128 steps (5%) done
+Removing temporary output file result/mapping1/SRR12886396_1.sam.
+Removing temporary output file result/mapping1/SRR12886396_1.bam.
+[Tue Aug 31 08:30:05 2021]
+Finished job 105.
+8 of 128 steps (6%) done
+Removing temporary output file result/mapping1/SRR12881622_1.sam.
+Removing temporary output file result/mapping1/SRR12881622_1.bam.
+[Tue Aug 31 08:30:05 2021]
+Finished job 70.
+9 of 128 steps (7%) done
+Removing temporary output file result/mapping1/SRR12886395_1.sam.
+Removing temporary output file result/mapping1/SRR12886395_1.bam.
+[Tue Aug 31 08:30:05 2021]
+Finished job 98.
+10 of 128 steps (8%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:05 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12881617_1.sorted.bam
+    output: result/variant_calling/SRR12881617_1.vcf, result/variant_calling/SRR12881617_1.vcf.gz
+    jobid: 34
+    wildcards: sample=SRR12881617_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:05 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12881622_1.sorted.bam
+    output: result/variant_calling/SRR12881622_1.vcf, result/variant_calling/SRR12881622_1.vcf.gz
+    jobid: 69
+    wildcards: sample=SRR12881622_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:05 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12881620_1.fastq
+    output: result/mapping1/SRR12881620_1.sam, result/mapping1/SRR12881620_1.bam, result/mapping1/SRR12881620_1.sorted.bam, result/mapping1/SRR12881620_1.sorted.bam.bai
+    jobid: 56
+    wildcards: sample=SRR12881620_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:05 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12881619_1.sorted.bam
+    output: result/variant_calling/SRR12881619_1.vcf, result/variant_calling/SRR12881619_1.vcf.gz
+    jobid: 48
+    wildcards: sample=SRR12881619_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:05 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12886399_1.fastq
+    output: result/mapping1/SRR12886399_1.sam, result/mapping1/SRR12886399_1.bam, result/mapping1/SRR12886399_1.sorted.bam, result/mapping1/SRR12886399_1.sorted.bam.bai
+    jobid: 126
+    wildcards: sample=SRR12886399_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:05 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12886398_1.fastq
+    output: result/mapping1/SRR12886398_1.sam, result/mapping1/SRR12886398_1.bam, result/mapping1/SRR12886398_1.sorted.bam, result/mapping1/SRR12886398_1.sorted.bam.bai
+    jobid: 119
+    wildcards: sample=SRR12886398_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:05 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12886395_1.sorted.bam
+    output: result/variant_calling/SRR12886395_1.vcf, result/variant_calling/SRR12886395_1.vcf.gz
+    jobid: 97
+    wildcards: sample=SRR12886395_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:05 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12886396_1.sorted.bam
+    output: result/variant_calling/SRR12886396_1.vcf, result/variant_calling/SRR12886396_1.vcf.gz
+    jobid: 104
+    wildcards: sample=SRR12886396_1
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Removing temporary output file result/mapping1/SRR12881621_1.sam.
+Removing temporary output file result/mapping1/SRR12881621_1.bam.
+[Tue Aug 31 08:30:05 2021]
+Finished job 63.
+11 of 128 steps (9%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:05 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12881621_1.sorted.bam
+    output: result/variant_calling/SRR12881621_1.vcf, result/variant_calling/SRR12881621_1.vcf.gz
+    jobid: 62
+    wildcards: sample=SRR12881621_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping1/SRR12881615_1.sam.
+Removing temporary output file result/mapping1/SRR12881615_1.bam.
+[Tue Aug 31 08:30:05 2021]
+Finished job 21.
+12 of 128 steps (9%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:05 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12881615_1.sorted.bam
+    output: result/variant_calling/SRR12881615_1.vcf, result/variant_calling/SRR12881615_1.vcf.gz
+    jobid: 20
+    wildcards: sample=SRR12881615_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping1/SRR12881620_1.sam.
+Removing temporary output file result/mapping1/SRR12881620_1.bam.
+[Tue Aug 31 08:30:05 2021]
+Finished job 56.
+13 of 128 steps (10%) done
+Select jobs to execute...
+Removing temporary output file result/mapping1/SRR12886398_1.sam.
+Removing temporary output file result/mapping1/SRR12886398_1.bam.
+[Tue Aug 31 08:30:05 2021]
+Finished job 119.
+14 of 128 steps (11%) done
+Removing temporary output file result/mapping1/SRR12886399_1.sam.
+Removing temporary output file result/mapping1/SRR12886399_1.bam.
+[Tue Aug 31 08:30:05 2021]
+Finished job 126.
+15 of 128 steps (12%) done
+
+[Tue Aug 31 08:30:05 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12881620_1.sorted.bam
+    output: result/variant_calling/SRR12881620_1.vcf, result/variant_calling/SRR12881620_1.vcf.gz
+    jobid: 55
+    wildcards: sample=SRR12881620_1
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+
+[Tue Aug 31 08:30:05 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12881616_1.sorted.bam
+    output: result/variant_calling/SRR12881616_1.vcf, result/variant_calling/SRR12881616_1.vcf.gz
+    jobid: 27
+    wildcards: sample=SRR12881616_1
+    resources: tmpdir=/tmp
+
+
+[Tue Aug 31 08:30:05 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12886393_1.sorted.bam
+    output: result/variant_calling/SRR12886393_1.vcf, result/variant_calling/SRR12886393_1.vcf.gz
+    jobid: 83
+    wildcards: sample=SRR12886393_1
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+[Tue Aug 31 08:30:11 2021]
+Finished job 27.
+16 of 128 steps (12%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:11 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12886398_1.sorted.bam
+    output: result/variant_calling/SRR12886398_1.vcf, result/variant_calling/SRR12886398_1.vcf.gz
+    jobid: 118
+    wildcards: sample=SRR12886398_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:12 2021]
+Finished job 83.
+17 of 128 steps (13%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:12 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12881616_1.vcf.gz
+    output: result/variant_calling/SRR12881616_1.filtrated.temp.vcf, result/variant_calling/SRR12881616_1.filtrated.vcf, result/variant_calling/SRR12881616_1.filtrated.vcf.bgz
+    jobid: 26
+    wildcards: sample=SRR12881616_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:14 2021]
+Finished job 104.
+18 of 128 steps (14%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:14 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12886397_1.fastq
+    output: result/mapping1/SRR12886397_1.sam, result/mapping1/SRR12886397_1.bam, result/mapping1/SRR12886397_1.sorted.bam, result/mapping1/SRR12886397_1.sorted.bam.bai
+    jobid: 112
+    wildcards: sample=SRR12886397_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping1/SRR12886397_1.sam.
+Removing temporary output file result/mapping1/SRR12886397_1.bam.
+[Tue Aug 31 08:30:15 2021]
+Finished job 112.
+19 of 128 steps (15%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:15 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12886397_1.sorted.bam
+    output: result/variant_calling/SRR12886397_1.vcf, result/variant_calling/SRR12886397_1.vcf.gz
+    jobid: 111
+    wildcards: sample=SRR12886397_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:16 2021]
+Finished job 97.
+20 of 128 steps (16%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:16 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12881614_1.sorted.bam
+    output: result/variant_calling/SRR12881614_1.vcf, result/variant_calling/SRR12881614_1.vcf.gz
+    jobid: 13
+    wildcards: sample=SRR12881614_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:18 2021]
+Finished job 118.
+21 of 128 steps (16%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:18 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12886398_1.vcf.gz
+    output: result/variant_calling/SRR12886398_1.filtrated.temp.vcf, result/variant_calling/SRR12886398_1.filtrated.vcf, result/variant_calling/SRR12886398_1.filtrated.vcf.bgz
+    jobid: 117
+    wildcards: sample=SRR12886398_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:19 2021]
+Finished job 55.
+22 of 128 steps (17%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:19 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12881613_1.fastq
+    output: result/mapping1/SRR12881613_1.sam, result/mapping1/SRR12881613_1.bam, result/mapping1/SRR12881613_1.sorted.bam, result/mapping1/SRR12881613_1.sorted.bam.bai
+    jobid: 7
+    wildcards: sample=SRR12881613_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping1/SRR12881613_1.sam.
+Removing temporary output file result/mapping1/SRR12881613_1.bam.
+[Tue Aug 31 08:30:20 2021]
+Finished job 7.
+23 of 128 steps (18%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:20 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12881613_1.sorted.bam
+    output: result/variant_calling/SRR12881613_1.vcf, result/variant_calling/SRR12881613_1.vcf.gz
+    jobid: 6
+    wildcards: sample=SRR12881613_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:20 2021]
+Finished job 69.
+24 of 128 steps (19%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:20 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12881622_1.vcf.gz
+    output: result/variant_calling/SRR12881622_1.filtrated.temp.vcf, result/variant_calling/SRR12881622_1.filtrated.vcf, result/variant_calling/SRR12881622_1.filtrated.vcf.bgz
+    jobid: 68
+    wildcards: sample=SRR12881622_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:21 2021]
+Finished job 48.
+25 of 128 steps (20%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:21 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12881618_1.sorted.bam
+    output: result/variant_calling/SRR12881618_1.vcf, result/variant_calling/SRR12881618_1.vcf.gz
+    jobid: 41
+    wildcards: sample=SRR12881618_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:21 2021]
+Finished job 62.
+26 of 128 steps (20%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:21 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12881621_1.vcf.gz
+    output: result/variant_calling/SRR12881621_1.filtrated.temp.vcf, result/variant_calling/SRR12881621_1.filtrated.vcf, result/variant_calling/SRR12881621_1.filtrated.vcf.bgz
+    jobid: 61
+    wildcards: sample=SRR12881621_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:21 2021]
+Finished job 20.
+27 of 128 steps (21%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:21 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12881615_1.vcf.gz
+    output: result/variant_calling/SRR12881615_1.filtrated.temp.vcf, result/variant_calling/SRR12881615_1.filtrated.vcf, result/variant_calling/SRR12881615_1.filtrated.vcf.bgz
+    jobid: 19
+    wildcards: sample=SRR12881615_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:23 2021]
+Finished job 34.
+28 of 128 steps (22%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:23 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12881617_1.vcf.gz
+    output: result/variant_calling/SRR12881617_1.filtrated.temp.vcf, result/variant_calling/SRR12881617_1.filtrated.vcf, result/variant_calling/SRR12881617_1.filtrated.vcf.bgz
+    jobid: 33
+    wildcards: sample=SRR12881617_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:26 2021]
+Finished job 13.
+29 of 128 steps (23%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:26 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12881614_1.vcf.gz
+    output: result/variant_calling/SRR12881614_1.filtrated.temp.vcf, result/variant_calling/SRR12881614_1.filtrated.vcf, result/variant_calling/SRR12881614_1.filtrated.vcf.bgz
+    jobid: 12
+    wildcards: sample=SRR12881614_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:26 2021]
+Finished job 111.
+30 of 128 steps (23%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:26 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12886397_1.vcf.gz
+    output: result/variant_calling/SRR12886397_1.filtrated.temp.vcf, result/variant_calling/SRR12886397_1.filtrated.vcf, result/variant_calling/SRR12886397_1.filtrated.vcf.bgz
+    jobid: 110
+    wildcards: sample=SRR12886397_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/variant_calling/SRR12881616_1.filtrated.temp.vcf.
+[Tue Aug 31 08:30:27 2021]
+Finished job 26.
+31 of 128 steps (24%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:28 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12881616_1.filtrated.vcf
+    output: result/consensus/SRR12881616_1.preconsensus.fasta
+    jobid: 25
+    wildcards: sample=SRR12881616_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:28 2021]
+Finished job 25.
+32 of 128 steps (25%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:29 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12886395_1.vcf.gz
+    output: result/variant_calling/SRR12886395_1.filtrated.temp.vcf, result/variant_calling/SRR12886395_1.filtrated.vcf, result/variant_calling/SRR12886395_1.filtrated.vcf.bgz
+    jobid: 96
+    wildcards: sample=SRR12886395_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:34 2021]
+Finished job 6.
+33 of 128 steps (26%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:34 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12881613_1.vcf.gz
+    output: result/variant_calling/SRR12881613_1.filtrated.temp.vcf, result/variant_calling/SRR12881613_1.filtrated.vcf, result/variant_calling/SRR12881613_1.filtrated.vcf.bgz
+    jobid: 5
+    wildcards: sample=SRR12881613_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/variant_calling/SRR12886398_1.filtrated.temp.vcf.
+[Tue Aug 31 08:30:34 2021]
+Finished job 117.
+34 of 128 steps (27%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:34 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12886398_1.filtrated.vcf
+    output: result/consensus/SRR12886398_1.preconsensus.fasta
+    jobid: 116
+    wildcards: sample=SRR12886398_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:35 2021]
+Finished job 116.
+35 of 128 steps (27%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:35 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12886398_1.preconsensus.fasta, input/fastq/SRR12886398_1.fastq
+    output: result/mapping2/SRR12886398_1.sam, result/mapping2/SRR12886398_1.bam, result/mapping2/SRR12886398_1.sorted.bam, result/mapping2/SRR12886398_1.sorted.bam.bai
+    jobid: 115
+    wildcards: sample=SRR12886398_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:36 2021]
+Finished job 41.
+36 of 128 steps (28%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:36 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12886396_1.vcf.gz
+    output: result/variant_calling/SRR12886396_1.filtrated.temp.vcf, result/variant_calling/SRR12886396_1.filtrated.vcf, result/variant_calling/SRR12886396_1.filtrated.vcf.bgz
+    jobid: 103
+    wildcards: sample=SRR12886396_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12886398_1.sam.
+Removing temporary output file result/mapping2/SRR12886398_1.bam.
+[Tue Aug 31 08:30:36 2021]
+Finished job 115.
+37 of 128 steps (29%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:36 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12886393_1.vcf.gz
+    output: result/variant_calling/SRR12886393_1.filtrated.temp.vcf, result/variant_calling/SRR12886393_1.filtrated.vcf, result/variant_calling/SRR12886393_1.filtrated.vcf.bgz
+    jobid: 82
+    wildcards: sample=SRR12886393_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/variant_calling/SRR12881622_1.filtrated.temp.vcf.
+[Tue Aug 31 08:30:36 2021]
+Finished job 68.
+38 of 128 steps (30%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:37 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12881622_1.filtrated.vcf
+    output: result/consensus/SRR12881622_1.preconsensus.fasta
+    jobid: 67
+    wildcards: sample=SRR12881622_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/variant_calling/SRR12881621_1.filtrated.temp.vcf.
+[Tue Aug 31 08:30:37 2021]
+Finished job 61.
+39 of 128 steps (30%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:37 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12881621_1.filtrated.vcf
+    output: result/consensus/SRR12881621_1.preconsensus.fasta
+    jobid: 60
+    wildcards: sample=SRR12881621_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/variant_calling/SRR12881615_1.filtrated.temp.vcf.
+[Tue Aug 31 08:30:37 2021]
+Finished job 19.
+40 of 128 steps (31%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:37 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12881615_1.filtrated.vcf
+    output: result/consensus/SRR12881615_1.preconsensus.fasta
+    jobid: 18
+    wildcards: sample=SRR12881615_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:37 2021]
+Finished job 67.
+41 of 128 steps (32%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:38 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12886399_1.sorted.bam
+    output: result/variant_calling/SRR12886399_1.vcf, result/variant_calling/SRR12886399_1.vcf.gz
+    jobid: 125
+    wildcards: sample=SRR12886399_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:38 2021]
+Finished job 60.
+42 of 128 steps (33%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:38 2021]
+rule Mapping1_minimap2:
+    input: input/nextclade_data/reference.fasta, input/fastq/SRR12886392_1.fastq
+    output: result/mapping1/SRR12886392_1.sam, result/mapping1/SRR12886392_1.bam, result/mapping1/SRR12886392_1.sorted.bam, result/mapping1/SRR12886392_1.sorted.bam.bai
+    jobid: 77
+    wildcards: sample=SRR12886392_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping1/SRR12886392_1.sam.
+Removing temporary output file result/mapping1/SRR12886392_1.bam.
+[Tue Aug 31 08:30:38 2021]
+Finished job 77.
+43 of 128 steps (34%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:38 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12886392_1.sorted.bam
+    output: result/variant_calling/SRR12886392_1.vcf, result/variant_calling/SRR12886392_1.vcf.gz
+    jobid: 76
+    wildcards: sample=SRR12886392_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:38 2021]
+Finished job 18.
+44 of 128 steps (34%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:38 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12881615_1.preconsensus.fasta, input/fastq/SRR12881615_1.fastq
+    output: result/mapping2/SRR12881615_1.sam, result/mapping2/SRR12881615_1.bam, result/mapping2/SRR12881615_1.sorted.bam, result/mapping2/SRR12881615_1.sorted.bam.bai
+    jobid: 17
+    wildcards: sample=SRR12881615_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12881615_1.sam.
+Removing temporary output file result/mapping2/SRR12881615_1.bam.
+[Tue Aug 31 08:30:39 2021]
+Finished job 17.
+45 of 128 steps (35%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:39 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12881615_1.sorted.bam, result/consensus/SRR12881615_1.preconsensus.fasta
+    output: result/consensus/SRR12881615_1.consensus.fasta
+    jobid: 16
+    wildcards: sample=SRR12881615_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/variant_calling/SRR12881617_1.filtrated.temp.vcf.
+[Tue Aug 31 08:30:39 2021]
+Finished job 33.
+46 of 128 steps (36%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:39 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12881617_1.filtrated.vcf
+    output: result/consensus/SRR12881617_1.preconsensus.fasta
+    jobid: 32
+    wildcards: sample=SRR12881617_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:40 2021]
+Finished job 32.
+47 of 128 steps (37%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:40 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12881617_1.preconsensus.fasta, input/fastq/SRR12881617_1.fastq
+    output: result/mapping2/SRR12881617_1.sam, result/mapping2/SRR12881617_1.bam, result/mapping2/SRR12881617_1.sorted.bam, result/mapping2/SRR12881617_1.sorted.bam.bai
+    jobid: 31
+    wildcards: sample=SRR12881617_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12881617_1.sam.
+Removing temporary output file result/mapping2/SRR12881617_1.bam.
+[Tue Aug 31 08:30:40 2021]
+Finished job 31.
+48 of 128 steps (38%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:40 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12881617_1.sorted.bam, result/consensus/SRR12881617_1.preconsensus.fasta
+    output: result/consensus/SRR12881617_1.consensus.fasta
+    jobid: 30
+    wildcards: sample=SRR12881617_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/variant_calling/SRR12886395_1.filtrated.temp.vcf.
+[Tue Aug 31 08:30:42 2021]
+Finished job 96.
+49 of 128 steps (38%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:42 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12886395_1.filtrated.vcf
+    output: result/consensus/SRR12886395_1.preconsensus.fasta
+    jobid: 95
+    wildcards: sample=SRR12886395_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/variant_calling/SRR12881614_1.filtrated.temp.vcf.
+[Tue Aug 31 08:30:43 2021]
+Finished job 12.
+50 of 128 steps (39%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:43 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12881614_1.filtrated.vcf
+    output: result/consensus/SRR12881614_1.preconsensus.fasta
+    jobid: 11
+    wildcards: sample=SRR12881614_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:43 2021]
+Finished job 95.
+51 of 128 steps (40%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:43 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12886395_1.preconsensus.fasta, input/fastq/SRR12886395_1.fastq
+    output: result/mapping2/SRR12886395_1.sam, result/mapping2/SRR12886395_1.bam, result/mapping2/SRR12886395_1.sorted.bam, result/mapping2/SRR12886395_1.sorted.bam.bai
+    jobid: 94
+    wildcards: sample=SRR12886395_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12886395_1.sam.
+Removing temporary output file result/mapping2/SRR12886395_1.bam.
+[Tue Aug 31 08:30:44 2021]
+Finished job 94.
+52 of 128 steps (41%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:44 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12886395_1.sorted.bam, result/consensus/SRR12886395_1.preconsensus.fasta
+    output: result/consensus/SRR12886395_1.consensus.fasta
+    jobid: 93
+    wildcards: sample=SRR12886395_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/variant_calling/SRR12886397_1.filtrated.temp.vcf.
+[Tue Aug 31 08:30:44 2021]
+Finished job 110.
+53 of 128 steps (41%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:44 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12886397_1.filtrated.vcf
+    output: result/consensus/SRR12886397_1.preconsensus.fasta
+    jobid: 109
+    wildcards: sample=SRR12886397_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:44 2021]
+Finished job 11.
+54 of 128 steps (42%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:44 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12881614_1.preconsensus.fasta, input/fastq/SRR12881614_1.fastq
+    output: result/mapping2/SRR12881614_1.sam, result/mapping2/SRR12881614_1.bam, result/mapping2/SRR12881614_1.sorted.bam, result/mapping2/SRR12881614_1.sorted.bam.bai
+    jobid: 10
+    wildcards: sample=SRR12881614_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12881614_1.sam.
+Removing temporary output file result/mapping2/SRR12881614_1.bam.
+[Tue Aug 31 08:30:44 2021]
+Finished job 10.
+55 of 128 steps (43%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:44 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12881614_1.sorted.bam, result/consensus/SRR12881614_1.preconsensus.fasta
+    output: result/consensus/SRR12881614_1.consensus.fasta
+    jobid: 9
+    wildcards: sample=SRR12881614_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:45 2021]
+Finished job 109.
+56 of 128 steps (44%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:45 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12886397_1.preconsensus.fasta, input/fastq/SRR12886397_1.fastq
+    output: result/mapping2/SRR12886397_1.sam, result/mapping2/SRR12886397_1.bam, result/mapping2/SRR12886397_1.sorted.bam, result/mapping2/SRR12886397_1.sorted.bam.bai
+    jobid: 108
+    wildcards: sample=SRR12886397_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12886397_1.sam.
+Removing temporary output file result/mapping2/SRR12886397_1.bam.
+[Tue Aug 31 08:30:45 2021]
+Finished job 108.
+57 of 128 steps (45%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:45 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12886397_1.sorted.bam, result/consensus/SRR12886397_1.preconsensus.fasta
+    output: result/consensus/SRR12886397_1.consensus.fasta
+    jobid: 107
+    wildcards: sample=SRR12886397_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:47 2021]
+Finished job 16.
+58 of 128 steps (45%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:47 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12881615_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12881615_1.tsv, result/nextclade/SRR12881615_1.temp
+    jobid: 15
+    wildcards: sample=SRR12881615_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:47 2021]
+Finished job 125.
+59 of 128 steps (46%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:48 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12886399_1.vcf.gz
+    output: result/variant_calling/SRR12886399_1.filtrated.temp.vcf, result/variant_calling/SRR12886399_1.filtrated.vcf, result/variant_calling/SRR12886399_1.filtrated.vcf.bgz
+    jobid: 124
+    wildcards: sample=SRR12886399_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/nextclade/SRR12881615_1.temp.
+[Tue Aug 31 08:30:48 2021]
+Finished job 15.
+60 of 128 steps (47%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:48 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12881621_1.preconsensus.fasta, input/fastq/SRR12881621_1.fastq
+    output: result/mapping2/SRR12881621_1.sam, result/mapping2/SRR12881621_1.bam, result/mapping2/SRR12881621_1.sorted.bam, result/mapping2/SRR12881621_1.sorted.bam.bai
+    jobid: 59
+    wildcards: sample=SRR12881621_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12881621_1.sam.
+Removing temporary output file result/mapping2/SRR12881621_1.bam.
+[Tue Aug 31 08:30:48 2021]
+Finished job 59.
+61 of 128 steps (48%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:48 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12881621_1.sorted.bam, result/consensus/SRR12881621_1.preconsensus.fasta
+    output: result/consensus/SRR12881621_1.consensus.fasta
+    jobid: 58
+    wildcards: sample=SRR12881621_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:49 2021]
+Finished job 30.
+62 of 128 steps (48%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:49 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12881617_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12881617_1.tsv, result/nextclade/SRR12881617_1.temp
+    jobid: 29
+    wildcards: sample=SRR12881617_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:49 2021]
+Finished job 76.
+63 of 128 steps (49%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:49 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12886392_1.vcf.gz
+    output: result/variant_calling/SRR12886392_1.filtrated.temp.vcf, result/variant_calling/SRR12886392_1.filtrated.vcf, result/variant_calling/SRR12886392_1.filtrated.vcf.bgz
+    jobid: 75
+    wildcards: sample=SRR12886392_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/nextclade/SRR12881617_1.temp.
+[Tue Aug 31 08:30:50 2021]
+Finished job 29.
+64 of 128 steps (50%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:50 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12881622_1.preconsensus.fasta, input/fastq/SRR12881622_1.fastq
+    output: result/mapping2/SRR12881622_1.sam, result/mapping2/SRR12881622_1.bam, result/mapping2/SRR12881622_1.sorted.bam, result/mapping2/SRR12881622_1.sorted.bam.bai
+    jobid: 66
+    wildcards: sample=SRR12881622_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12881622_1.sam.
+Removing temporary output file result/mapping2/SRR12881622_1.bam.
+[Tue Aug 31 08:30:50 2021]
+Finished job 66.
+65 of 128 steps (51%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:50 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12881622_1.sorted.bam, result/consensus/SRR12881622_1.preconsensus.fasta
+    output: result/consensus/SRR12881622_1.consensus.fasta
+    jobid: 65
+    wildcards: sample=SRR12881622_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/variant_calling/SRR12881613_1.filtrated.temp.vcf.
+[Tue Aug 31 08:30:51 2021]
+Finished job 5.
+66 of 128 steps (52%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:51 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12881613_1.filtrated.vcf
+    output: result/consensus/SRR12881613_1.preconsensus.fasta
+    jobid: 4
+    wildcards: sample=SRR12881613_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:52 2021]
+Finished job 93.
+67 of 128 steps (52%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:52 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12886395_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12886395_1.tsv, result/nextclade/SRR12886395_1.temp
+    jobid: 92
+    wildcards: sample=SRR12886395_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/variant_calling/SRR12886393_1.filtrated.temp.vcf.
+[Tue Aug 31 08:30:52 2021]
+Finished job 82.
+68 of 128 steps (53%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:52 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12886393_1.filtrated.vcf
+    output: result/consensus/SRR12886393_1.preconsensus.fasta
+    jobid: 81
+    wildcards: sample=SRR12886393_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:52 2021]
+Finished job 4.
+69 of 128 steps (54%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:52 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12881613_1.preconsensus.fasta, input/fastq/SRR12881613_1.fastq
+    output: result/mapping2/SRR12881613_1.sam, result/mapping2/SRR12881613_1.bam, result/mapping2/SRR12881613_1.sorted.bam, result/mapping2/SRR12881613_1.sorted.bam.bai
+    jobid: 3
+    wildcards: sample=SRR12881613_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/variant_calling/SRR12886396_1.filtrated.temp.vcf.
+[Tue Aug 31 08:30:52 2021]
+Finished job 103.
+70 of 128 steps (55%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:52 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12886396_1.filtrated.vcf
+    output: result/consensus/SRR12886396_1.preconsensus.fasta
+    jobid: 102
+    wildcards: sample=SRR12886396_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:53 2021]
+Finished job 9.
+71 of 128 steps (55%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:53 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12881614_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12881614_1.tsv, result/nextclade/SRR12881614_1.temp
+    jobid: 8
+    wildcards: sample=SRR12881614_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12881613_1.sam.
+Removing temporary output file result/mapping2/SRR12881613_1.bam.
+[Tue Aug 31 08:30:53 2021]
+Finished job 3.
+72 of 128 steps (56%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:53 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12881613_1.sorted.bam, result/consensus/SRR12881613_1.preconsensus.fasta
+    output: result/consensus/SRR12881613_1.consensus.fasta
+    jobid: 2
+    wildcards: sample=SRR12881613_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/nextclade/SRR12886395_1.temp.
+[Tue Aug 31 08:30:53 2021]
+Finished job 92.
+73 of 128 steps (57%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:53 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12886398_1.sorted.bam, result/consensus/SRR12886398_1.preconsensus.fasta
+    output: result/consensus/SRR12886398_1.consensus.fasta
+    jobid: 114
+    wildcards: sample=SRR12886398_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:53 2021]
+Finished job 81.
+74 of 128 steps (58%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:53 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12886393_1.preconsensus.fasta, input/fastq/SRR12886393_1.fastq
+    output: result/mapping2/SRR12886393_1.sam, result/mapping2/SRR12886393_1.bam, result/mapping2/SRR12886393_1.sorted.bam, result/mapping2/SRR12886393_1.sorted.bam.bai
+    jobid: 80
+    wildcards: sample=SRR12886393_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:53 2021]
+Finished job 102.
+75 of 128 steps (59%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:53 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12886396_1.preconsensus.fasta, input/fastq/SRR12886396_1.fastq
+    output: result/mapping2/SRR12886396_1.sam, result/mapping2/SRR12886396_1.bam, result/mapping2/SRR12886396_1.sorted.bam, result/mapping2/SRR12886396_1.sorted.bam.bai
+    jobid: 101
+    wildcards: sample=SRR12886396_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12886393_1.sam.
+Removing temporary output file result/mapping2/SRR12886393_1.bam.
+[Tue Aug 31 08:30:54 2021]
+Finished job 80.
+76 of 128 steps (59%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:54 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12886393_1.sorted.bam, result/consensus/SRR12886393_1.preconsensus.fasta
+    output: result/consensus/SRR12886393_1.consensus.fasta
+    jobid: 79
+    wildcards: sample=SRR12886393_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:54 2021]
+Finished job 107.
+77 of 128 steps (60%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:54 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12886397_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12886397_1.tsv, result/nextclade/SRR12886397_1.temp
+    jobid: 106
+    wildcards: sample=SRR12886397_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/nextclade/SRR12881614_1.temp.
+[Tue Aug 31 08:30:54 2021]
+Finished job 8.
+78 of 128 steps (61%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:54 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12881616_1.preconsensus.fasta, input/fastq/SRR12881616_1.fastq
+    output: result/mapping2/SRR12881616_1.sam, result/mapping2/SRR12881616_1.bam, result/mapping2/SRR12881616_1.sorted.bam, result/mapping2/SRR12881616_1.sorted.bam.bai
+    jobid: 24
+    wildcards: sample=SRR12881616_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12886396_1.sam.
+Removing temporary output file result/mapping2/SRR12886396_1.bam.
+[Tue Aug 31 08:30:54 2021]
+Finished job 101.
+79 of 128 steps (62%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:54 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12881619_1.vcf.gz
+    output: result/variant_calling/SRR12881619_1.filtrated.temp.vcf, result/variant_calling/SRR12881619_1.filtrated.vcf, result/variant_calling/SRR12881619_1.filtrated.vcf.bgz
+    jobid: 47
+    wildcards: sample=SRR12881619_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12881616_1.sam.
+Removing temporary output file result/mapping2/SRR12881616_1.bam.
+[Tue Aug 31 08:30:54 2021]
+Finished job 24.
+80 of 128 steps (62%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:54 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12881616_1.sorted.bam, result/consensus/SRR12881616_1.preconsensus.fasta
+    output: result/consensus/SRR12881616_1.consensus.fasta
+    jobid: 23
+    wildcards: sample=SRR12881616_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/nextclade/SRR12886397_1.temp.
+[Tue Aug 31 08:30:55 2021]
+Finished job 106.
+81 of 128 steps (63%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:55 2021]
+rule variant_calling_freebayes:
+    input: input/nextclade_data/reference.fasta, result/mapping1/SRR12886394_1.sorted.bam
+    output: result/variant_calling/SRR12886394_1.vcf, result/variant_calling/SRR12886394_1.vcf.gz
+    jobid: 90
+    wildcards: sample=SRR12886394_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:56 2021]
+Finished job 58.
+82 of 128 steps (64%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:57 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12881621_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12881621_1.tsv, result/nextclade/SRR12881621_1.temp
+    jobid: 57
+    wildcards: sample=SRR12881621_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/nextclade/SRR12881621_1.temp.
+[Tue Aug 31 08:30:58 2021]
+Finished job 57.
+83 of 128 steps (65%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:58 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12881620_1.vcf.gz
+    output: result/variant_calling/SRR12881620_1.filtrated.temp.vcf, result/variant_calling/SRR12881620_1.filtrated.vcf, result/variant_calling/SRR12881620_1.filtrated.vcf.bgz
+    jobid: 54
+    wildcards: sample=SRR12881620_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:30:59 2021]
+Finished job 65.
+84 of 128 steps (66%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:30:59 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12881622_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12881622_1.tsv, result/nextclade/SRR12881622_1.temp
+    jobid: 64
+    wildcards: sample=SRR12881622_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/nextclade/SRR12881622_1.temp.
+[Tue Aug 31 08:31:00 2021]
+Finished job 64.
+85 of 128 steps (66%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:00 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12886396_1.sorted.bam, result/consensus/SRR12886396_1.preconsensus.fasta
+    output: result/consensus/SRR12886396_1.consensus.fasta
+    jobid: 100
+    wildcards: sample=SRR12886396_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:00 2021]
+Finished job 2.
+86 of 128 steps (67%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:00 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12881618_1.vcf.gz
+    output: result/variant_calling/SRR12881618_1.filtrated.temp.vcf, result/variant_calling/SRR12881618_1.filtrated.vcf, result/variant_calling/SRR12881618_1.filtrated.vcf.bgz
+    jobid: 40
+    wildcards: sample=SRR12881618_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:01 2021]
+Finished job 114.
+87 of 128 steps (68%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:01 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12881613_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12881613_1.tsv, result/nextclade/SRR12881613_1.temp
+    jobid: 1
+    wildcards: sample=SRR12881613_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:02 2021]
+Finished job 79.
+88 of 128 steps (69%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:02 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12886393_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12886393_1.tsv, result/nextclade/SRR12886393_1.temp
+    jobid: 78
+    wildcards: sample=SRR12886393_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:02 2021]
+Finished job 23.
+89 of 128 steps (70%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:02 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12881616_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12881616_1.tsv, result/nextclade/SRR12881616_1.temp
+    jobid: 22
+    wildcards: sample=SRR12881616_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/nextclade/SRR12881613_1.temp.
+[Tue Aug 31 08:31:02 2021]
+Finished job 1.
+90 of 128 steps (70%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:02 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12886398_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12886398_1.tsv, result/nextclade/SRR12886398_1.temp
+    jobid: 113
+    wildcards: sample=SRR12886398_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/nextclade/SRR12886393_1.temp.
+[Tue Aug 31 08:31:03 2021]
+Finished job 78.
+91 of 128 steps (71%) done
+Removing temporary output file result/nextclade/SRR12881616_1.temp.
+[Tue Aug 31 08:31:04 2021]
+Finished job 22.
+92 of 128 steps (72%) done
+Removing temporary output file result/nextclade/SRR12886398_1.temp.
+[Tue Aug 31 08:31:04 2021]
+Finished job 113.
+93 of 128 steps (73%) done
+Removing temporary output file result/variant_calling/SRR12886399_1.filtrated.temp.vcf.
+[Tue Aug 31 08:31:04 2021]
+Finished job 124.
+94 of 128 steps (73%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:04 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12886399_1.filtrated.vcf
+    output: result/consensus/SRR12886399_1.preconsensus.fasta
+    jobid: 123
+    wildcards: sample=SRR12886399_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/variant_calling/SRR12886392_1.filtrated.temp.vcf.
+[Tue Aug 31 08:31:04 2021]
+Finished job 75.
+95 of 128 steps (74%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:04 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12886392_1.filtrated.vcf
+    output: result/consensus/SRR12886392_1.preconsensus.fasta
+    jobid: 74
+    wildcards: sample=SRR12886392_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:05 2021]
+Finished job 123.
+96 of 128 steps (75%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:05 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12886399_1.preconsensus.fasta, input/fastq/SRR12886399_1.fastq
+    output: result/mapping2/SRR12886399_1.sam, result/mapping2/SRR12886399_1.bam, result/mapping2/SRR12886399_1.sorted.bam, result/mapping2/SRR12886399_1.sorted.bam.bai
+    jobid: 122
+    wildcards: sample=SRR12886399_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:05 2021]
+Finished job 74.
+97 of 128 steps (76%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:05 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12886392_1.preconsensus.fasta, input/fastq/SRR12886392_1.fastq
+    output: result/mapping2/SRR12886392_1.sam, result/mapping2/SRR12886392_1.bam, result/mapping2/SRR12886392_1.sorted.bam, result/mapping2/SRR12886392_1.sorted.bam.bai
+    jobid: 73
+    wildcards: sample=SRR12886392_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12886399_1.sam.
+Removing temporary output file result/mapping2/SRR12886399_1.bam.
+[Tue Aug 31 08:31:05 2021]
+Finished job 122.
+98 of 128 steps (77%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:05 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12886399_1.sorted.bam, result/consensus/SRR12886399_1.preconsensus.fasta
+    output: result/consensus/SRR12886399_1.consensus.fasta
+    jobid: 121
+    wildcards: sample=SRR12886399_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12886392_1.sam.
+Removing temporary output file result/mapping2/SRR12886392_1.bam.
+[Tue Aug 31 08:31:06 2021]
+Finished job 73.
+99 of 128 steps (77%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:06 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12886392_1.sorted.bam, result/consensus/SRR12886392_1.preconsensus.fasta
+    output: result/consensus/SRR12886392_1.consensus.fasta
+    jobid: 72
+    wildcards: sample=SRR12886392_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:06 2021]
+Finished job 90.
+100 of 128 steps (78%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:06 2021]
+rule filter_vcf:
+    input: result/variant_calling/SRR12886394_1.vcf.gz
+    output: result/variant_calling/SRR12886394_1.filtrated.temp.vcf, result/variant_calling/SRR12886394_1.filtrated.vcf, result/variant_calling/SRR12886394_1.filtrated.vcf.bgz
+    jobid: 89
+    wildcards: sample=SRR12886394_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:07 2021]
+Finished job 100.
+101 of 128 steps (79%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:07 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12886396_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12886396_1.tsv, result/nextclade/SRR12886396_1.temp
+    jobid: 99
+    wildcards: sample=SRR12886396_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/nextclade/SRR12886396_1.temp.
+[Tue Aug 31 08:31:08 2021]
+Finished job 99.
+102 of 128 steps (80%) done
+Removing temporary output file result/variant_calling/SRR12881619_1.filtrated.temp.vcf.
+[Tue Aug 31 08:31:08 2021]
+Finished job 47.
+103 of 128 steps (80%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:08 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12881619_1.filtrated.vcf
+    output: result/consensus/SRR12881619_1.preconsensus.fasta
+    jobid: 46
+    wildcards: sample=SRR12881619_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:09 2021]
+Finished job 46.
+104 of 128 steps (81%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:09 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12881619_1.preconsensus.fasta, input/fastq/SRR12881619_1.fastq
+    output: result/mapping2/SRR12881619_1.sam, result/mapping2/SRR12881619_1.bam, result/mapping2/SRR12881619_1.sorted.bam, result/mapping2/SRR12881619_1.sorted.bam.bai
+    jobid: 45
+    wildcards: sample=SRR12881619_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12881619_1.sam.
+Removing temporary output file result/mapping2/SRR12881619_1.bam.
+[Tue Aug 31 08:31:09 2021]
+Finished job 45.
+105 of 128 steps (82%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:09 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12881619_1.sorted.bam, result/consensus/SRR12881619_1.preconsensus.fasta
+    output: result/consensus/SRR12881619_1.consensus.fasta
+    jobid: 44
+    wildcards: sample=SRR12881619_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:11 2021]
+Finished job 121.
+106 of 128 steps (83%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:11 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12886399_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12886399_1.tsv, result/nextclade/SRR12886399_1.temp
+    jobid: 120
+    wildcards: sample=SRR12886399_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:11 2021]
+Finished job 72.
+107 of 128 steps (84%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:11 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12886392_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12886392_1.tsv, result/nextclade/SRR12886392_1.temp
+    jobid: 71
+    wildcards: sample=SRR12886392_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/variant_calling/SRR12881620_1.filtrated.temp.vcf.
+[Tue Aug 31 08:31:12 2021]
+Finished job 54.
+108 of 128 steps (84%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:12 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12881620_1.filtrated.vcf
+    output: result/consensus/SRR12881620_1.preconsensus.fasta
+    jobid: 53
+    wildcards: sample=SRR12881620_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/nextclade/SRR12886399_1.temp.
+[Tue Aug 31 08:31:12 2021]
+Finished job 120.
+109 of 128 steps (85%) done
+Removing temporary output file result/nextclade/SRR12886392_1.temp.
+[Tue Aug 31 08:31:12 2021]
+Finished job 71.
+110 of 128 steps (86%) done
+[Tue Aug 31 08:31:12 2021]
+Finished job 53.
+111 of 128 steps (87%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:12 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12881620_1.preconsensus.fasta, input/fastq/SRR12881620_1.fastq
+    output: result/mapping2/SRR12881620_1.sam, result/mapping2/SRR12881620_1.bam, result/mapping2/SRR12881620_1.sorted.bam, result/mapping2/SRR12881620_1.sorted.bam.bai
+    jobid: 52
+    wildcards: sample=SRR12881620_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12881620_1.sam.
+Removing temporary output file result/mapping2/SRR12881620_1.bam.
+[Tue Aug 31 08:31:13 2021]
+Finished job 52.
+112 of 128 steps (88%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:13 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12881620_1.sorted.bam, result/consensus/SRR12881620_1.preconsensus.fasta
+    output: result/consensus/SRR12881620_1.consensus.fasta
+    jobid: 51
+    wildcards: sample=SRR12881620_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/variant_calling/SRR12881618_1.filtrated.temp.vcf.
+[Tue Aug 31 08:31:13 2021]
+Finished job 40.
+113 of 128 steps (88%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:13 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12881618_1.filtrated.vcf
+    output: result/consensus/SRR12881618_1.preconsensus.fasta
+    jobid: 39
+    wildcards: sample=SRR12881618_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:14 2021]
+Finished job 39.
+114 of 128 steps (89%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:14 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12881618_1.preconsensus.fasta, input/fastq/SRR12881618_1.fastq
+    output: result/mapping2/SRR12881618_1.sam, result/mapping2/SRR12881618_1.bam, result/mapping2/SRR12881618_1.sorted.bam, result/mapping2/SRR12881618_1.sorted.bam.bai
+    jobid: 38
+    wildcards: sample=SRR12881618_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/mapping2/SRR12881618_1.sam.
+Removing temporary output file result/mapping2/SRR12881618_1.bam.
+[Tue Aug 31 08:31:15 2021]
+Finished job 38.
+115 of 128 steps (90%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:15 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12881618_1.sorted.bam, result/consensus/SRR12881618_1.preconsensus.fasta
+    output: result/consensus/SRR12881618_1.consensus.fasta
+    jobid: 37
+    wildcards: sample=SRR12881618_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:15 2021]
+Finished job 44.
+116 of 128 steps (91%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:15 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12881619_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12881619_1.tsv, result/nextclade/SRR12881619_1.temp
+    jobid: 43
+    wildcards: sample=SRR12881619_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/nextclade/SRR12881619_1.temp.
+[Tue Aug 31 08:31:16 2021]
+Finished job 43.
+117 of 128 steps (91%) done
+Removing temporary output file result/variant_calling/SRR12886394_1.filtrated.temp.vcf.
+[Tue Aug 31 08:31:18 2021]
+Finished job 89.
+118 of 128 steps (92%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:18 2021]
+rule compute_consensus_sequence:
+    input: input/nextclade_data/reference.fasta, result/variant_calling/SRR12886394_1.filtrated.vcf
+    output: result/consensus/SRR12886394_1.preconsensus.fasta
+    jobid: 88
+    wildcards: sample=SRR12886394_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:18 2021]
+Finished job 51.
+119 of 128 steps (93%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:18 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12881620_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12881620_1.tsv, result/nextclade/SRR12881620_1.temp
+    jobid: 50
+    wildcards: sample=SRR12881620_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:19 2021]
+Finished job 88.
+120 of 128 steps (94%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:19 2021]
+rule Mapping2_minimap2:
+    input: result/consensus/SRR12886394_1.preconsensus.fasta, input/fastq/SRR12886394_1.fastq
+    output: result/mapping2/SRR12886394_1.sam, result/mapping2/SRR12886394_1.bam, result/mapping2/SRR12886394_1.sorted.bam, result/mapping2/SRR12886394_1.sorted.bam.bai
+    jobid: 87
+    wildcards: sample=SRR12886394_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/nextclade/SRR12881620_1.temp.
+[Tue Aug 31 08:31:19 2021]
+Finished job 50.
+121 of 128 steps (95%) done
+Removing temporary output file result/mapping2/SRR12886394_1.sam.
+Removing temporary output file result/mapping2/SRR12886394_1.bam.
+[Tue Aug 31 08:31:19 2021]
+Finished job 87.
+122 of 128 steps (95%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:19 2021]
+rule mark_lowcoverage_in_consensus:
+    input: result/mapping2/SRR12886394_1.sorted.bam, result/consensus/SRR12886394_1.preconsensus.fasta
+    output: result/consensus/SRR12886394_1.consensus.fasta
+    jobid: 86
+    wildcards: sample=SRR12886394_1
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:20 2021]
+Finished job 37.
+123 of 128 steps (96%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:20 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12881618_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12881618_1.tsv, result/nextclade/SRR12881618_1.temp
+    jobid: 36
+    wildcards: sample=SRR12881618_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/nextclade/SRR12881618_1.temp.
+[Tue Aug 31 08:31:21 2021]
+Finished job 36.
+124 of 128 steps (97%) done
+[Tue Aug 31 08:31:25 2021]
+Finished job 86.
+125 of 128 steps (98%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:25 2021]
+rule annotate_nextclade:
+    input: result/consensus/SRR12886394_1.consensus.fasta, input/nextclade_data/reference.fasta, input/nextclade_data/tree.json, input/nextclade_data/qc.json, input/nextclade_data/genemap.gff
+    output: result/nextclade/SRR12886394_1.tsv, result/nextclade/SRR12886394_1.temp
+    jobid: 85
+    wildcards: sample=SRR12886394_1
+    resources: tmpdir=/tmp
+
+Removing temporary output file result/nextclade/SRR12886394_1.temp.
+[Tue Aug 31 08:31:25 2021]
+Finished job 85.
+126 of 128 steps (98%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:25 2021]
+rule merge_results:
+    input: result/nextclade/SRR12881613_1.tsv, result/nextclade/SRR12881614_1.tsv, result/nextclade/SRR12881615_1.tsv, result/nextclade/SRR12881616_1.tsv, result/nextclade/SRR12881617_1.tsv, result/nextclade/SRR12881618_1.tsv, result/nextclade/SRR12881619_1.tsv, result/nextclade/SRR12881620_1.tsv, result/nextclade/SRR12881621_1.tsv, result/nextclade/SRR12881622_1.tsv, result/nextclade/SRR12886392_1.tsv, result/nextclade/SRR12886393_1.tsv, result/nextclade/SRR12886394_1.tsv, result/nextclade/SRR12886395_1.tsv, result/nextclade/SRR12886396_1.tsv, result/nextclade/SRR12886397_1.tsv, result/nextclade/SRR12886398_1.tsv, result/nextclade/SRR12886399_1.tsv, input/metadata.csv
+    output: result/merged_result.csv
+    jobid: 127
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:25 2021]
+Finished job 127.
+127 of 128 steps (99%) done
+Select jobs to execute...
+
+[Tue Aug 31 08:31:25 2021]
+localrule all:
+    input: result/nextclade/SRR12881613_1.tsv, result/nextclade/SRR12881614_1.tsv, result/nextclade/SRR12881615_1.tsv, result/nextclade/SRR12881616_1.tsv, result/nextclade/SRR12881617_1.tsv, result/nextclade/SRR12881618_1.tsv, result/nextclade/SRR12881619_1.tsv, result/nextclade/SRR12881620_1.tsv, result/nextclade/SRR12881621_1.tsv, result/nextclade/SRR12881622_1.tsv, result/nextclade/SRR12886392_1.tsv, result/nextclade/SRR12886393_1.tsv, result/nextclade/SRR12886394_1.tsv, result/nextclade/SRR12886395_1.tsv, result/nextclade/SRR12886396_1.tsv, result/nextclade/SRR12886397_1.tsv, result/nextclade/SRR12886398_1.tsv, result/nextclade/SRR12886399_1.tsv, result/merged_result.csv
+    jobid: 0
+    resources: tmpdir=/tmp
+
+[Tue Aug 31 08:31:25 2021]
+Finished job 0.
+128 of 128 steps (100%) done
+Complete log: /home/jerome/Documents/PANDEM2_genomic/.snakemake/log/2021-08-31T083003.925021.snakemake.log
