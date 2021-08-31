@@ -21,7 +21,7 @@ cd PANDEM2_genomic
 Create a conda environnement 
 ```
 mamba env create --file workflow/envs/PANDEM2_genomic.yml
-conda activate PANDEM_NGS
+conda activate PANDEM2_genomic
 ```
 Launch the pipeline
 ```
