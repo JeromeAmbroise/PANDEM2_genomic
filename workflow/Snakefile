@@ -9,7 +9,6 @@ metadata = pd.read_csv(config["metadata"], sep=',')
 
 rule all:
    input:
-      expand(os.path.join(outputdir, "nextclade","{sample}.tsv"),sample=metadata.samplename.tolist()),
       os.path.join(outputdir, "merged_result.csv"),
 
 include: "rules/Mapping1_minimap2.smk"

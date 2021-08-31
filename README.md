@@ -23,7 +23,9 @@ Create a conda environnement
 mamba env create --file workflow/envs/PANDEM2_genomic.yml
 conda activate PANDEM2_genomic
 ```
-Launch the pipeline
+Build DAG (optional) and launch the pipeline
+
 ```
+snakemake -np --cores 10 --dag |dot -Tsvg > dag.svg
 snakemake --cores 10
 ```
